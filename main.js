@@ -13,22 +13,19 @@ function sendMessage() {
 
 // listen for incoming messages
 firebase.database().ref("messages").on("child_added", function (snapshot) {
-  // keep at least 1 root node
-  if (snapshot.key != 0) {
-    // give each message unique id
-    let html_message = "<li id='message-" + snapshot.key + "'>";
-    html_message += "<i><b>" + snapshot.val().sender + "</b></i>" + ": "
-        + snapshot.val().message;
-    html_message += "</li>";
-    // add message to front of the list
-    document.getElementById("messages").innerHTML =
-        html_message + document.getElementById("messages").innerHTML;
+  // give each message unique id
+  let html_message = "<li id='message-" + snapshot.key + "'>";
+  html_message += "<i><b>" + snapshot.val().sender + "</b></i>" + ": "
+      + snapshot.val().message;
+  html_message += "</li>";
+  // add message to front of the list
+  document.getElementById("messages").innerHTML =
+      html_message + document.getElementById("messages").innerHTML;
 
-    // delete this message after 30 seconds
-    setTimeout(function () {
-      deleteMessage(snapshot.key);
-    }, 30000);
-  }
+  // delete this message after 30 seconds
+  setTimeout(function () {
+    deleteMessage(snapshot.key);
+  }, 30000);
 });
 
 // given snapshot key removes it from firebase
