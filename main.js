@@ -13,9 +13,9 @@ function sendMessage() {
 
 // listen for incoming messages
 firebase.database().ref("messages").on("child_added", function (snapshot) {
-  // keep at least 1 root node (with no children it will delete)
+  // keep at least 1 root node
   if (snapshot.key != 0) {
-    // give each message unique id (not used anywhere as of now)
+    // give each message unique id
     let html_message = "<li id='message-" + snapshot.key + "'>";
     html_message += "<i><b>" + snapshot.val().sender + "</b></i>" + ": "
         + snapshot.val().message;
