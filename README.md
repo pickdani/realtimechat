@@ -1,5 +1,5 @@
 # realtimechat-firebase
-realtime chat, using firebase realtime and javascript
+realtime chat using firebase realtime and javascript
 
 view project: https://pickdani.github.io/realtimechat-firebase/
 
