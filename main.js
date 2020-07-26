@@ -1,4 +1,4 @@
-let myName = prompt("enter a username");
+let myName = prompt("enter a username, empty for anon");
 
 if (myName.length > 10) {
     myName = myName.substring(0, 10) + "...";
