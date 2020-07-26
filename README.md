@@ -1,5 +1,5 @@
 # realtimechat-firebase
-simple firebase demo with pure js
+simple firebase chat demo with pure js
 
 https://danielpickett.dev/realtimechat-firebase/
 
