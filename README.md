@@ -1,11 +1,6 @@
 # realtimechat-firebase
-realtime chat using firebase realtime and javascript
+simple firebase demo with pure js
 
-view project: https://pickdani.github.io/realtimechat-firebase/
+https://danielpickett.dev/realtimechat-firebase/
 
 ![](chat-example.gif)  
-
-<hr>
-
-
-Messages fade away and are removed from database after 30 seconds.  
