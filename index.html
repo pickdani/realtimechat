@@ -18,14 +18,15 @@
 
 <!-- firebase config -->
 <script src="firebase-config.js"></script>
-
 <script src="main.js"></script>
 <link rel="stylesheet" type="text/css" href="main.css">
 
 <!-- save message, clear field, and return -->
 <form onsubmit="let msg = sendMessage();this.reset();return msg;">
-  <input autocomplete="off" id="message" placeholder="Enter message">
+  <input autocomplete="off" id="message" maxlength="280" placeholder="Enter message">
 </form>
+
+<p> messages stay <u>forever.</u> </p>
 
 <!-- will append messages inside this list -->
 <ul id="messages"></ul>
