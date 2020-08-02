@@ -1,6 +1,6 @@
 # realtimechat-firebase
 simple firebase chat demo with pure js
 
-https://danielpickett.dev/realtimechat-firebase/
+https://pickdani.github.io/realtimechat-firebase/
 
 ![](chat-example.gif)  
