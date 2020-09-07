@@ -64,10 +64,10 @@ firebase.database().ref("messages").on("child_added", function (snapshot) {
         html_message + document.getElementById("messages").innerHTML;
 
 
-    // delete this message after 30 seconds.  - commented out so now messages stay forever, wanted to see what happens...
-    //setTimeout(function () {
-    //deleteMessage(snapshot.key);
-    //}, 30000);
+    // delete this message after 30 seconds
+    setTimeout(function () {
+      deleteMessage(snapshot.key);
+    }, 30000);
 });
 
 
