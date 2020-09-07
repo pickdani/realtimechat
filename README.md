@@ -1,6 +1,6 @@
 # realtimechat
 Real-time web chat with Firebase and JavaScript. 
 
-https://pickdani.github.io/realtimechat/
+Example between browsers and showing database being updated.
 
 ![](chat-example.gif)  
