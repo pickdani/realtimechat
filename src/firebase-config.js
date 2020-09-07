@@ -1,4 +1,4 @@
-// My web app's Firebase configuration
+// My web app's Firebase configuration, (no longer live)
 var firebaseConfig = {
   apiKey: "AIzaSyBUAqlh6e20xu7PYT5pjCBEXftknUqszPQ",
   authDomain: "github-chatapp.firebaseapp.com",
